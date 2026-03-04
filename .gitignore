@@ -1,0 +1,78 @@
+# Create .gitignore file
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+health_env/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# TensorFlow / Keras / Models
+*.h5
+*.hdf5
+*.h5py
+*.pkl
+*.pickle
+!label_encoder.pkl
+!scaler.pkl
+!*.py
+
+# Datasets (large files)
+Dataset/breathing_dataset_full.pkl
+Dataset/*.pkl
+Dataset/*.pickle
+!Dataset/*.csv
+
+# Models weights (keep architecture files only)
+models/*.h5
+models/*.pkl
+models/*.hdf5
+!models/cnn_model.py
+!models/conv_lstm_model.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+logs/
+wandb/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+"@ | Out-File -FilePath ".gitignore" -Encoding UTF8
+
+# Verify it was created
+Get-Content .gitignore

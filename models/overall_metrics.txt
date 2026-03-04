@@ -1,0 +1,24 @@
+Overall Cross-Validation Results
+==================================================
+
+Accuracy:  0.5199
+Precision: 0.8562
+Recall:    0.5199
+F1-Score:  0.6360
+
+Per-Class Performance:
+
+Hypopnea:
+  Precision: 0.0397
+  Recall:    0.3333
+  F1-Score:  0.0709
+
+Normal:
+  Precision: 0.9205
+  Recall:    0.5409
+  F1-Score:  0.6814
+
+Obstructive Apnea:
+  Precision: 0.0000
+  Recall:    0.0000
+  F1-Score:  0.0000
