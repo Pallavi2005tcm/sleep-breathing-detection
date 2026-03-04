@@ -15,3 +15,6 @@ Each participant folder contains:
 Install dependencies:
 ```bash
 pip install -r requirements.txt
+
+##AI Tool Usage Disclosure
+This project was developed with the assistance of DeepSeek. I have carefully reviewed and studied the complete implementation and understand all preprocessing steps, modeling choices, and evaluation methods used. I am able to clearly explain every component of the project during discussion.
